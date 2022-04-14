@@ -139,6 +139,9 @@ aside{
 	width:2.2rem;
 	height: 2.2rem;
 }
+.logo__danger{
+	color:var(--color-primary);
+}
 
 /* SIDEBAR ======================*/
 
