@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+
+
+	<script defer src="js/order.js"></script>
+	<script defer src="js/app.js"></script>
+
+	<title>Responsive Admin Dashboard Using HTML CSS & JavaScript with Light & Dark Mode</title>
+</head>
+
+<body>
+	<div class="container">
+		<aside>
+			<div class="top">
+				<div class="top__logo logo">
+					<img class="logo__icons" src="../img/logo.png" alt="">
+					<h2 class="logo__text">EGA<span class="logo__danger">TOR</span></h2>
+				</div>
+				<div class="top__close-icon" id="close-btn">
+					<span class="material-icons-sharp"> close </span>
+				</div>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> grid_view </span>
+							<h3 class="sidebar__text">Dashboard</h3>
+						</a>
+					</li>
+					<li class="sidebar__item ">
+						<a class="sidebar__link --active" href="#">
+							<span class="material-icons-sharp"> person_outline</span>
+							<h3 class="sidebar__text">Customers</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> receipt_long </span>
+							<h3 class="sidebar__text">Orders</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> insights </span>
+							<h3 class="sidebar__text">Analytics</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> mail_outline</span>
+							<h3 class="sidebar__text">Messages</h3>
+							<b class="sidebar__messages-count">12</b>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> inventory </span>
+							<h3 class="sidebar__text">Products</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp">report_gmailerrorred </span>
+							<h3 class="sidebar__text">Reports</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> settings </span>
+							<h3 class="sidebar__text">Settings</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> add</span>
+							<h3 class="sidebar__text">Add progect</h3>
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a class="sidebar__link" href="#">
+							<span class="material-icons-sharp"> logout</span>
+							<h3 class="sidebar__text">Logout</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<main>
+			<h1>Dashboard</h1>
+			<div class="date"><input type="date"></div>
+			<div class="insights">
+				<div class="insights__sales">
+					<span class="material-icons-sharp"> analytics </span>
+					<div class="insights__middle middle">
+						<div class="middle__left">
+							<h3>Total Sales</h3>
+							<h1>$25,000</h1>
+						</div>
+						<div class="middle__right">
+							<div class="middle__progress">
+								<svg>
+									<circle cx='38' cy='38' r='36'></circle>
+								</svg>
+								<div class="middle__number">
+									<p>81%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<small class="insights__text-muted">Last 24 Houurs</small>
+				</div>
+				<!-- 	 -->
+				<div class="insights__expensess">
+					<span class="material-icons-sharp"> bar_chart </span>
+					<div class="insights__middle middle">
+						<div class="middle__left">
+							<h3>Total Expenses</h3>
+							<h1>$14,600</h1>
+						</div>
+						<div class="middle__right">
+							<div class="middle__progress">
+								<svg>
+									<circle cx='38' cy='38' r='36'></circle>
+								</svg>
+								<div class="middle__number">
+									<p>62%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<small class="insights__text-muted">Last 24 Houurs</small>
+				</div>
+				<!-- 	 -->
+				<div class="insights__incone">
+					<span class="material-icons-sharp"> stacked_line_chart </span>
+					<div class="insights__middle middle">
+						<div class="middle__left">
+							<h3>Total Income</h3>
+							<h1>$10,840</h1>
+						</div>
+						<div class="middle__right">
+							<div class="middle__progress">
+								<svg>
+									<circle cx='38' cy='38' r='36'></circle>
+								</svg>
+								<div class="middle__number">
+									<p>44%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<small class="insights__text-muted">Last 24 Houurs</small>
+				</div>
+			</div>
+			<div class="recent-orders">
+				<h2>Recent Orders</h2>
+				<table class="recent-orders__table">
+					<thead>
+						<tr>
+							<th>Product Name</th>
+							<th>Product Number</th>
+							<th>Payment</th>
+							<th>Stutus</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="recent-orders__table-body">
+
+					</tbody>
+				</table>
+				<a class="recent-orders__link" href="#">Show All</a>
+			</div>
+		</main>
+		<div class="right">
+			<div class="right__top">
+				<button class="right__burger-btn" id="menu-btn">
+					<span class="material-icons-sharp"> menu </span>
+				</button>
+				<div class="right__theme-toggle">
+					<span class="material-icons-sharp --active-theme"> light_mode </span>
+					<span class="material-icons-sharp"> dark_mode </span>
+				</div>
+				<div class="right__profile">
+					<div class="right__profile-info">
+						<p>Hey, <b>Daniel</b></p>
+						<small class="right__text-muted">Admin</small>
+					</div>
+					<div class="right__profile-photo">
+						<img src="./img/profile-1.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="right__recept-updates">
+				<h2>Recept Updates</h2>
+				<div class="right__updates updates">
+					<div class="updates__update">
+						<div class="updates__profile-photo">
+							<img src="./img/profile-2.jpg">
+						</div>
+						<div class="updates__message">
+							<p><b>Mike Tyson</b> resived his order of Night lion tech GPS drone</p>
+							<small class="updates__text-muted"> 2 Minutes Ago</small>
+						</div>
+					</div>
+					<div class="updates__update">
+						<div class="updates__profile-photo">
+							<img src="./img/profile-3.jpg">
+						</div>
+						<div class="updates__message">
+							<p><b>Mike Tyson</b> resived his order of Night lion tech GPS drone</p>
+							<small class="updates__text-muted"> 2 Minutes Ago</small>
+						</div>
+					</div>
+					<div class="updates__update">
+						<div class="updates__profile-photo">
+							<img src="./img/profile-4.jpg">
+						</div>
+						<div class="updates__message">
+							<p><b>Mike Tyson</b> resived his order of Night lion tech GPS drone</p>
+							<small class="updates__text-muted"> 2 Minutes Ago</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sales-analytics">
+				<h2>Sales Analytics</h2>
+				<div class="sales-analytics__item --online">
+					<div class="sales-analytics__icon">
+						<span class="material-icons-sharp"> shopping_cart </span>
+					</div>
+					<div class="sales-analytics__right">
+						<div class="sales-analytics__info">
+							<h3>ONLINE ORDERS</h3>
+							<small class="sales-analytics__text-muted">Last 24 Houurs</small>
+						</div>
+						<h5 class="success">+35%</h5>
+						<h3>3549</h3>
+					</div>
+				</div>
+				<div class="sales-analytics__item --offline">
+					<div class="sales-analytics__icon">
+						<span class="material-icons-sharp"> local_mall </span>
+					</div>
+					<div class="sales-analytics__right">
+						<div class="sales-analytics__info">
+							<h3>OFFLINE ORDERS</h3>
+							<small class="sales-analytics__text-muted">Last 24 Houurs</small>
+						</div>
+						<h5 class="danger">-17%</h5>
+						<h3>1100</h3>
+					</div>
+				</div>
+				<div class="sales-analytics__item --customers">
+					<div class="sales-analytics__icon">
+						<span class="material-icons-sharp"> person </span>
+					</div>
+					<div class="sales-analytics__right">
+						<div class="sales-analytics__info">
+							<h3>NEW CUSTOMERS</h3>
+							<small class="sales-analytics__text-muted">Last 24 Houurs</small>
+						</div>
+						<h5 class="success">+25%</h5>
+						<h3>8490</h3>
+					</div>
+				</div>
+				<div class="sales-analytics__item --add-products">
+					<div class="sales-analytics__icon-add">
+						<span class="material-icons-sharp"> add </span>
+						<h3>Add Product</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
